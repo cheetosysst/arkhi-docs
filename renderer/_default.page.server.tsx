@@ -15,7 +15,7 @@ async function render(pageContext: PageContextServer) {
 	const pageHtml = ReactDOMServer.renderToString(
 		<PageShell pageContext={pageContext}>
 			<Page {...pageProps} />
-		</PageShell>
+		</PageShell>,
 	);
 	const headHtml = ReactDOMServer.renderToString(<>{pageContext.Head}</>);
 
@@ -34,7 +34,7 @@ async function render(pageContext: PageContextServer) {
       <body>
         <div id="page-view">${dangerouslySkipEscape(pageHtml)}</div>
         <div id="prefetch-setting" data-setting = ${JSON.stringify(
-			PrefetchSetting || ""
+			PrefetchSetting || "",
 		)}></div>
         <script>
           var propString = '${dangerouslySkipEscape(propString || "")}'

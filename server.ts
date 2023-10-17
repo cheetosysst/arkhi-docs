@@ -8,7 +8,7 @@ injectMiddleware(
 	trpcExpress.createExpressMiddleware({
 		router: appRouters,
 		createContext,
-	})
+	}),
 );
 
 startServer();
