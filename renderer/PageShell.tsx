@@ -2,7 +2,8 @@ import React, { type PropsWithChildren } from "react";
 import { PageContextProvider } from "./usePageContext";
 import type { PageContext } from "./types";
 import "./PageShell.css";
-import { ArkhiProvider, Link } from "arkhi/client";
+import { ArkhiProvider, Island, Link } from "arkhi/client";
+import { Github } from "lucide-react";
 
 export { PageShell };
 
@@ -26,23 +27,67 @@ function PageShell({
 
 function Layout({ children }: PropsWithChildren) {
 	return (
-		<div className="max-w-screen-xl pt-10 mx-auto my-8 flex-col px-4 sm:px-6 md:px-8 flex gap-4 lg:mb-32">
-			<Navbar />
-			{children}
-		</div>
+		<>
+			<div className="max-w-screen-xl mx-auto min-h-[100dvh] flex-col flex gap-4 my-8 px-4 sm:px-6 md:px-8 lg:mb-32">
+				<Navbar />
+				{children}
+			</div>
+		</>
 	);
 }
 
 function Navbar({ children }: PropsWithChildren) {
 	return (
-		<div className="fixed top-0 py-2 bg-[#212121] w-full">
+		<div className="mx-auto w-full sticky flex justify-between items-center top-0 bg-[#212121]">
 			<Link
 				href="/"
-				className="flex w-fit transition-colors cursor-pointer p-2 rounded-md hover:bg-white/30 items-center text-4xl font-bold gap-2"
+				className="flex transition-colors cursor-pointer p-2 rounded-md hover:bg-white/30 items-center text-4xl font-bold gap-2"
 			>
 				<img src="arkhi.svg" width={32} height={32} />
 				<h1 className="">ARKHI</h1>
 			</Link>
+			<ul className="flex gap-2 text-lg">
+				<li>
+					<Link
+						className="hover:bg-white/50 rounded-md transition-colors p-2"
+						href="/"
+					>
+						Docs
+					</Link>
+				</li>
+				<li>
+					<Link
+						className="hover:bg-white/50 rounded-md transition-colors p-2"
+						href="/"
+					>
+						Guides
+					</Link>
+				</li>
+				<li>
+					<Link
+						className="hover:bg-white/50 rounded-md transition-colors p-2"
+						href="/"
+					>
+						Github
+					</Link>
+				</li>
+				<li>
+					<Link
+						className="hover:bg-white/50 rounded-md transition-colors p-2"
+						href="/"
+					>
+						About
+					</Link>
+				</li>
+				<li>
+					<Link
+						className="hover:bg-white/50 rounded-md transition-colors p-2"
+						href="/"
+					>
+						<Github className="inline" size={20} />
+					</Link>
+				</li>
+			</ul>
 		</div>
 	);
 }

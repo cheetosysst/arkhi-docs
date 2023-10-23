@@ -1,10 +1,14 @@
 import ReactDOMServer from "react-dom/server";
 import React from "react";
-import { PageShell } from "./PageShell.js";
+import { PageShell } from "./PageShell";
 import { escapeInject, dangerouslySkipEscape } from "vike/server";
-import type { PageContextServer } from "./types.js";
+import type { PageContextServer } from "./types";
 import { IslandProps } from "arkhi/client";
 import SuperJSON from "superjson";
+
+import { Head, PageHeads } from "arkhi/client";
+
+import { generatePreloadTags, clearAssetSet } from "arkhi/client";
 
 export { render };
 // See https://vike.dev/data-fetching
@@ -17,12 +21,20 @@ async function render(pageContext: PageContextServer) {
 			<Page {...pageProps} />
 		</PageShell>,
 	);
-	const headHtml = ReactDOMServer.renderToString(<>{pageContext.Head}</>);
+
+	console.log(Head);
+	const preloadTags = generatePreloadTags();
+	const headHtml = ReactDOMServer.renderToString(
+		<>
+			{PageHeads}
+			{preloadTags}
+		</>,
+	);
 
 	const { PrefetchSetting } = pageContext.exports;
 	const propString = SuperJSON.stringify(Object.fromEntries(IslandProps));
 	IslandProps.clear();
-
+	clearAssetSet();
 	const documentHtml = escapeInject`<!DOCTYPE html>
     <html lang="en">
 		<head>
@@ -37,6 +49,9 @@ async function render(pageContext: PageContextServer) {
 			PrefetchSetting || "",
 		)}></div>
         <script>
+					var prefetchSetting = '${dangerouslySkipEscape(
+						JSON.stringify(PrefetchSetting || ""),
+					)}'
           var propString = '${dangerouslySkipEscape(propString || "")}'
         </script>
       </body>
