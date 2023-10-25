@@ -58,7 +58,7 @@ function Navbar({ children }: PropsWithChildren) {
 				<li>
 					<Link
 						className="hover:bg-white/50 rounded-md transition-colors p-2"
-						href="/"
+						href="/guides"
 					>
 						Guides
 					</Link>
@@ -74,7 +74,7 @@ function Navbar({ children }: PropsWithChildren) {
 				<li>
 					<Link
 						className="hover:bg-white/50 rounded-md transition-colors p-2"
-						href="/"
+						href="/about"
 					>
 						About
 					</Link>

@@ -44,20 +44,20 @@ function Hero() {
 						getting started
 					</a>
 					<a
-						href="/"
+						href="/docs"
 						className="py-2 px-4 font-medium drop-shadow-md bg-white/20 hover:bg-white/30 rounded-3xl capitalize"
 					>
 						Documentation
 					</a>
 					<a
-						href="/"
+						href="https://github.com/cheetosysst/arkhi"
 						className="flex gap-2 items-center justify-center py-2 px-4 font-medium drop-shadow-md bg-white/20 hover:bg-white/30 rounded-3xl capitalize"
 					>
 						<Github />
 						Github
 					</a>
 					<a
-						href="/"
+						href="/about"
 						className="py-2 px-4 font-medium drop-shadow-md bg-white/20 hover:bg-white/30 rounded-3xl capitalize"
 					>
 						About
