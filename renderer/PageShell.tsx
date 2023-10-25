@@ -28,7 +28,7 @@ function PageShell({
 function Layout({ children }: PropsWithChildren) {
 	return (
 		<>
-			<div className="max-w-screen-xl mx-auto min-h-[100dvh] flex-col flex gap-4 my-8 px-4 sm:px-6 md:px-8 lg:mb-32">
+			<div className="max-w-screen-xl mx-auto min-h-[100dvh] flex-col flex gap-4 py-8 px-4 sm:px-6 md:px-8">
 				<Navbar />
 				{children}
 			</div>
@@ -38,7 +38,7 @@ function Layout({ children }: PropsWithChildren) {
 
 function Navbar({ children }: PropsWithChildren) {
 	return (
-		<div className="mx-auto w-full sticky flex justify-between items-center top-0 bg-[#212121]">
+		<div className="mx-auto w-full sticky flex justify-between items-center z-20 top-0 bg-transparent">
 			<Link
 				href="/"
 				className="flex transition-colors cursor-pointer p-2 rounded-md hover:bg-white/30 items-center text-4xl font-bold gap-2"
