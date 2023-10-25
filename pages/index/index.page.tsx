@@ -1,5 +1,5 @@
 import React, { type ReactElement } from "react";
-import { Head } from "arkhi/client";
+import { Head, Link } from "arkhi/client";
 
 import "./index.css";
 import {
@@ -46,31 +46,31 @@ function Hero() {
 					Blazingly fast hydration
 				</span>
 				<div className="flex gap-2 justify-center lg:justify-start mt-10 flex-wrap">
-					<a
+					<Link
 						href="/"
 						className="py-2 px-4 font-semibold bg-gradient-to-r from-purple-700 to-purple-500 hover:from-red-500 hover:to-violet-500 transition-all duration-500 drop-shadow-md rounded-3xl capitalize"
 					>
 						getting started
-					</a>
-					<a
+					</Link>
+					<Link
 						href="/docs"
 						className="py-2 px-4 font-medium drop-shadow-md bg-white/20 hover:bg-white/30 rounded-3xl capitalize"
 					>
 						Documentation
-					</a>
-					<a
+					</Link>
+					<Link
 						href="https://github.com/cheetosysst/arkhi"
 						className="flex gap-2 items-center justify-center py-2 px-4 font-medium drop-shadow-md bg-white/20 hover:bg-white/30 rounded-3xl capitalize"
 					>
 						<Github />
 						Github
-					</a>
-					<a
+					</Link>
+					<Link
 						href="/about"
 						className="py-2 px-4 font-medium drop-shadow-md bg-white/20 hover:bg-white/30 rounded-3xl capitalize"
 					>
 						About
-					</a>
+					</Link>
 				</div>
 			</div>
 			<div className="flex justify-center relative items-center">
