@@ -16,7 +16,7 @@ function Page() {
 				<link rel="icon" type="image/x-icon" href="favicon.ico" />
 			</Head>
 			<div className="flex flex-col-reverse lg:flex-row py-20 justify-around">
-				<div className="mx-auto lg:mx-0">
+				<div className="text-center lg:text-left">
 					<h1 className="lg:text-5xl pt-10 text-2xl font-bold bg-gradient-to-r leading-10 lg:leading-[4rem] from-pink-500 via-purple-700 to-purple-500 bg-clip-text">
 						<span className="text-transparent text-6xl">
 							Arkhi.js
@@ -29,7 +29,7 @@ function Page() {
 					<span className="lg:text-2xl capitalize text-xl font-medium text-white/50">
 						Blazingly fast hydration
 					</span>
-					<div className="flex gap-2 mt-10">
+					<div className="flex gap-2 justify-center lg:justify-start mt-10 flex-wrap">
 						<a
 							href="/"
 							className="py-2 px-4 font-semibold bg-gradient-to-r from-purple-700 to-purple-500 hover:from-red-500 hover:to-violet-500 transition-all duration-500 drop-shadow-md rounded-3xl capitalize"
@@ -40,7 +40,7 @@ function Page() {
 							href="/"
 							className="py-2 px-4 font-medium drop-shadow-md bg-white/20 hover:bg-white/30 rounded-3xl capitalize"
 						>
-							About
+							Documentation
 						</a>
 						<a
 							href="/"
@@ -48,6 +48,12 @@ function Page() {
 						>
 							<Github />
 							Github
+						</a>
+						<a
+							href="/"
+							className="py-2 px-4 font-medium drop-shadow-md bg-white/20 hover:bg-white/30 rounded-3xl capitalize"
+						>
+							About
 						</a>
 					</div>
 				</div>
