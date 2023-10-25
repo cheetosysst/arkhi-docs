@@ -50,7 +50,7 @@ function Navbar({ children }: PropsWithChildren) {
 				<li>
 					<Link
 						className="hover:bg-white/50 rounded-md transition-colors p-2"
-						href="/"
+						href="/docs"
 					>
 						Docs
 					</Link>
@@ -66,7 +66,7 @@ function Navbar({ children }: PropsWithChildren) {
 				<li>
 					<Link
 						className="hover:bg-white/50 rounded-md transition-colors p-2"
-						href="/"
+						href="https://github.com/cheetosysst/arkhi"
 					>
 						Github
 					</Link>
@@ -77,14 +77,6 @@ function Navbar({ children }: PropsWithChildren) {
 						href="/"
 					>
 						About
-					</Link>
-				</li>
-				<li>
-					<Link
-						className="hover:bg-white/50 rounded-md transition-colors p-2"
-						href="/"
-					>
-						<Github className="inline" size={20} />
 					</Link>
 				</li>
 			</ul>
