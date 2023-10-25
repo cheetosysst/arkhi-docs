@@ -22,7 +22,6 @@ async function render(pageContext: PageContextServer) {
 		</PageShell>,
 	);
 
-	console.log(Head);
 	const preloadTags = generatePreloadTags();
 	const headHtml = ReactDOMServer.renderToString(
 		<>

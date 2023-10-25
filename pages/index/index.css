@@ -1,0 +1,11 @@
+.logo-glow {
+	background-image: linear-gradient(-45deg, #fc861d 50%, #25a725 50%);
+	filter: blur(100px);
+	border-radius: 50%;
+	width: 350px;
+	height: 350px;
+	translate: -50% -50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
