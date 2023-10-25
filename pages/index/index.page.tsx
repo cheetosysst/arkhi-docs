@@ -2,7 +2,16 @@ import React, { type ReactElement } from "react";
 import { Head } from "arkhi/client";
 
 import "./index.css";
-import { Github, Palmtree, type LucideIcon } from "lucide-react";
+import {
+	Github,
+	Palmtree,
+	type LucideIcon,
+	Key,
+	Gauge,
+	Wrench,
+	Brush,
+	Radio,
+} from "lucide-react";
 
 export { Page };
 export const PrefetchSetting = { mode: "hover" };
@@ -87,32 +96,35 @@ const features: Array<Feature> = [
 	{
 		name: "Island Architecture",
 		icon: <Palmtree className="drop-shadow-sm" />,
-		description: "lorem ipsum",
+		description:
+			"Blazingly fast hydration speed, only hydrate when it's needed.",
 	},
 	{
-		name: "Island Architecture",
-		icon: <Palmtree className="drop-shadow-sm" />,
-		description: "lorem ipsum",
+		name: "Fully Typed",
+		icon: <Key className="drop-shadow-sm" />,
+		description: "Built with Typescript in mind, arkhi is fully typesafe.",
 	},
 	{
-		name: "Island Architecture",
-		icon: <Palmtree className="drop-shadow-sm" />,
-		description: "lorem ipsum",
+		name: "Rich Features",
+		icon: <Wrench className="drop-shadow-sm" />,
+		description: "OOTB markdown support, tRPC api, and many more!",
 	},
 	{
-		name: "Island Architecture",
-		icon: <Palmtree className="drop-shadow-sm" />,
-		description: "lorem ipsum",
+		name: "Server-Side Rendering",
+		icon: <Brush className="drop-shadow-sm" />,
+		description:
+			"Utilize SSR to compliment islands architecture's short coming.",
 	},
 	{
-		name: "Island Architecture",
-		icon: <Palmtree className="drop-shadow-sm" />,
-		description: "lorem ipsum",
+		name: "Reactive",
+		icon: <Gauge className="drop-shadow-sm" />,
+		description:
+			"Reactive Share hook API for sharing state across islands.",
 	},
 	{
-		name: "Island Architecture",
-		icon: <Palmtree className="drop-shadow-sm" />,
-		description: "lorem ipsum",
+		name: "Auto Prefetch",
+		icon: <Radio className="drop-shadow-sm" />,
+		description: "Prefetch pages for seamless transitions.",
 	},
 ];
 
