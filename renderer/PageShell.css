@@ -6,3 +6,124 @@ body {
 	background: #212121;
 	color: #fcfcfc;
 }
+
+html:not([data-scroll="0"]) .bg-nav {
+	background-image: linear-gradient(to bottom, #212121, #212121ee, #21212100);
+	/* background-color: #212121ee; */
+}
+
+/* sm */
+@media (min-width: 640px) {
+}
+s
+/* md */
+@media (min-width: 768px) {
+}
+/* lg */
+@media (min-width: 1024px) {
+}
+/* xl */
+@media (min-width: 1280px) {
+}
+/* 2xl */
+@media (min-width: 1536px) {
+}
+
+/* Markdown headings */
+
+.md-hd::before {
+	font-weight: 400;
+	color: #fff5;
+	content: "# ";
+	transition-property: color;
+	duration: 150ms;
+}
+
+.md-hd:hover::before {
+	color: #fffa;
+	transition-property: color;
+	duration: 150ms;
+}
+
+.md-hd {
+	font-weight: 500;
+	margin-bottom: 0.5rem;
+	margin-top: 2rem;
+}
+
+.md-hd:first-child {
+	margin-top: 0;
+}
+
+.md-h1 {
+	font-size: 3rem;
+	border-bottom-width: 2px;
+	border-color: #fff5;
+}
+.md-h2 {
+	font-size: 2.25rem;
+	border-bottom-width: 2px;
+	border-color: #fff5;
+}
+.md-h3 {
+	font-size: 1.875rem;
+}
+.md-h4 {
+	margin-top: 0.25rem;
+	font-size: 1.5rem;
+}
+.md-h5 {
+	margin-top: 0.1rem;
+	font-size: 1.25rem;
+}
+
+/* Markdown p */
+
+.md-p {
+	margin-bottom: 1rem;
+	font-size: 1.1rem;
+}
+
+/* Markdown list */
+.md-ul {
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+	font-size: 1.1rem;
+}
+
+.md-ol {
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+	font-size: 1.1rem;
+}
+
+.md-ul > li > .md-ul {
+	padding-left: 1rem;
+}
+
+.md-ol > li > .md-ol {
+	padding-left: 1rem;
+}
+
+.md-ul > li {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+.md-ol > li {
+	list-style-type: decimal;
+	list-style-position: inside;
+}
+
+/* Markdown anchor */
+
+.md-a {
+	color: #f59e0b;
+	transition-property: color;
+	duration: 150ms;
+}
+.md-a:hover {
+	color: #fcd34d;
+	transition-property: color;
+	duration: 150ms;
+}

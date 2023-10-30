@@ -38,7 +38,7 @@ function Layout({ children }: PropsWithChildren) {
 
 function Navbar({ children }: PropsWithChildren) {
 	return (
-		<div className="mx-auto w-full sticky flex justify-between items-center z-20 top-0 bg-transparent">
+		<div className="mx-auto bg-nav w-full sticky flex justify-between items-center z-20 top-0 bg-transparent">
 			<div>
 				<Link
 					href="/"
