@@ -25,6 +25,7 @@ injectMDXPlugins("rehype", [
 			span: "md-span",
 			a: "md-a",
 			code: "language-js",
+			blockquote: "md-bq",
 		},
 	],
 	// @ts-ignores

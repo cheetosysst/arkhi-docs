@@ -99,3 +99,35 @@ export async function getStaticPaths() {
 	};
 }
 ```
+
+
+### Horizontal Line
+
+---
+
+---
+
+### Table
+
+| | Lawful | Neutral | Chaotic |
+|-|-|-|-|
+| Good | Lawful Good | Neutral Good | Chaotic Good |
+| Neutral | Lawful Neutral | True Neutral | Chaotic Neutral |
+| Evil | Lawful Evil | Neutral Evil | Chaotic Evil |
+
+### Checkbox
+
+- [ ] Buy eggs
+- [x] Buy milk
+- [x] Buy toothbrush
+
+These are not aligned properly
+
+### Blockquotes
+
+> This is a blockquote.
+> > This is a blockquote inside a blockquote.
+>
+> #### you can even use header here
+>
+

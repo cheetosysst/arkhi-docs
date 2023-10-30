@@ -171,3 +171,17 @@ code.language-js:not(.hljs) {
 .hljs-literal {
 	color: #c792ea;
 }
+
+/* Markdown blockquote */
+
+.md-bq {
+	padding-left: 1rem;
+	padding-top: 0.2rem;
+	/* padding-bottom: 0.25rem; */
+	border-left: 0.25rem solid #fff4;
+}
+
+.md-bq > .md-p {
+	margin-bottom: 0rem;
+	padding-bottom: 0.25rem;
+}
