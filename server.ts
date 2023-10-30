@@ -3,11 +3,11 @@ import * as trpcExpress from "@trpc/server/adapters/express";
 import { appRouters } from "./api/index.js";
 import { createContext } from "./api/context.js";
 import { injectMDXPlugins } from "arkhi/plugins";
-import remarkGfm from "remark-gfm";
+// import remarkGfm from "remark-gfm";
 import addClass from "rehype-class-names";
 import rehypeHighlight from "rehype-highlight";
 
-injectMDXPlugins("remark", [remarkGfm]);
+// injectMDXPlugins("remark", [remarkGfm]);
 injectMDXPlugins("rehype", [
 	[
 		addClass,

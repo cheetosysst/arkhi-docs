@@ -70,6 +70,32 @@ Sections is not implemented, yet.
 
 ### Code
 
+You can use `InlineCode()`.
 
 Or a code block with highlighted text.
 
+```js
+export async function getStaticPaths() {
+	const pathCategory = path.join(process.cwd(), "content");
+	const categories = fs.readdirSync(pathCategory);
+
+	let paths = [];
+	categories.map((category) => {
+		const articles = fs.readdirSync(path.join(pathCategory, category));
+
+		articles.map((article) => {
+			paths.push({
+				params: {
+					article,
+					category,
+				},
+			});
+		});
+	});
+
+	return {
+		paths,
+		fallback: false,
+	};
+}
+```

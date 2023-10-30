@@ -5,6 +5,7 @@
 body {
 	background: #212121;
 	color: #fcfcfc;
+	font-variant-numeric: tabular-nums;
 }
 
 html:not([data-scroll="0"]) .bg-nav {
@@ -126,4 +127,47 @@ s
 	color: #fcd34d;
 	transition-property: color;
 	duration: 150ms;
+}
+
+/* Markdown code */
+
+code.language-js:not(.hljs) {
+	background-color: #fff2;
+	padding: 0.25rem;
+	font-size: 1rem;
+	border-radius: 0.3rem;
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+		"Liberation Mono", "Courier New", monospace;
+	letter-spacing: 0.04em;
+}
+
+.md-pre {
+	padding: 1.5rem;
+	border-radius: 1rem;
+	filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
+	background-color: #fff1;
+}
+
+.hljs-keyword {
+	color: #c792ea;
+}
+
+.hljs-title {
+	color: #82aaff;
+}
+
+.hljs-params {
+	color: #ff5370;
+}
+
+.hljs-string {
+	color: #c3e88d;
+}
+
+.hljs-attr {
+	color: #f78c6c;
+}
+
+.hljs-literal {
+	color: #c792ea;
 }
