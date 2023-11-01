@@ -9,7 +9,7 @@ body {
 }
 
 html:not([data-scroll="0"]) .bg-nav {
-	background-image: linear-gradient(to bottom, #212121, #212121ee, #21212100);
+	/* background-image: linear-gradient(to bottom, #212121, #212121ee, #21212100); */
 	/* background-color: #212121ee; */
 }
 
@@ -83,6 +83,8 @@ s
 .md-p {
 	margin-bottom: 1rem;
 	font-size: 1.1rem;
+	padding-right: 0.5rem;
+	padding-left: 0.5rem;
 }
 
 /* Markdown list */

@@ -131,8 +131,12 @@ const features: Array<Feature> = [
 function Features() {
 	return (
 		<div className="flex flex-wrap justify-center flex-row gap-4">
-			{features.map((item) => (
-				<FeatureCard className="w-80" {...item} />
+			{features.map((item, key) => (
+				<FeatureCard
+					className="w-80"
+					key={`featurecard${key}`}
+					{...item}
+				/>
 			))}
 		</div>
 	);
