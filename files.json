@@ -31,7 +31,7 @@
 		"data": [
 			{
 				"path": "../../../content/docs/start/getting_started.md",
-				"title": "getting-started",
+				"title": "getting started",
 				"date": "2023-11-09T00:00:00Z"
 			},
 			{
@@ -114,6 +114,22 @@
 			{
 				"path": "../../../content/docs/advanced/migrate.md",
 				"title": "migrate",
+				"date": "2023-11-09T00:00:00Z"
+			}
+		]
+	},
+	"reference": {
+		"name": "reference",
+		"weight": 4,
+		"data": [
+			{
+				"path": "../../../content/docs/reference/alias.md",
+				"title": "alias",
+				"date": "2023-11-09T00:00:00Z"
+			},
+			{
+				"path": "../../../content/docs/reference/environment.md",
+				"title": "environment",
 				"date": "2023-11-09T00:00:00Z"
 			}
 		]
