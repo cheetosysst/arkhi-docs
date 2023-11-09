@@ -1,6 +1,6 @@
 import { Link } from "arkhi/client";
 import { PropsWithChildren } from "react";
-import { getDocs } from "#/libs/files";
+import { type Article, getDocs } from "#/libs/files";
 import { Book, Github, Menu } from "lucide-react";
 
 export default function Layout({ children }: PropsWithChildren) {
@@ -32,10 +32,13 @@ export default function Layout({ children }: PropsWithChildren) {
 							className="flex flex-col group"
 							key={`navchapter${chapter.name}`}
 						>
-							<span className="text-xl flex gap-2 items-center border-b-2 text-white/70 group-hover:text-white transition-colors border-white/10 group-hover:border-white/50 pb-1 mb-1 mt-2 pl-1 capitalize">
+							<Link
+								href={`/docs/${chapter.name}`}
+								className="text-xl flex gap-2 items-center border-b-2 text-white/70 group-hover:text-white transition-colors border-white/10 group-hover:border-white/50 pb-1 mb-1 mt-2 pl-1 capitalize"
+							>
 								<Book size={20} />
 								{chapter.name}
-							</span>
+							</Link>
 							{chapter.data.map((article) => (
 								<NavLink
 									title={article.title}
@@ -68,5 +71,27 @@ function NavLink({ title, href }: { title: string; href: string }) {
 		>
 			{title}
 		</Link>
+	);
+}
+
+export function LinksForIndex({
+	articles,
+	chapter,
+}: {
+	articles: Array<Article>;
+	chapter: string;
+}) {
+	return (
+		<div className="flex flex-col gap-4">
+			{articles.map((item) => (
+				<Link
+					className="p-6 rounded-xl drop-shadow-lg bg-neutral-800 hover:bg-neutral-700 capitalize font-medium text-xl"
+					href={`/docs/${chapter}/${item.title.split(" ").join("-")}`}
+					key={item.title}
+				>
+					{item.title}
+				</Link>
+			))}
+		</div>
 	);
 }
