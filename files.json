@@ -1,0 +1,34 @@
+{
+	"basic": {
+		"name": "basic",
+		"weight": 1,
+		"data": [
+			{
+				"path": "#/content/docs/basic/getting-started.md",
+				"title": "getting started",
+				"date": "2023-11-09T00:00:00Z"
+			},
+			{
+				"path": "#/content/docs/basic/placeholder.md",
+				"title": "placeholder",
+				"date": "2023-11-09T00:00:00Z"
+			}
+		]
+	},
+	"basic copy": {
+		"name": "basic copy",
+		"weight": 2,
+		"data": [
+			{
+				"path": "#/content/docs/basic copy/getting-started.md",
+				"title": "getting started",
+				"date": "2023-11-09T00:00:00Z"
+			},
+			{
+				"path": "#/content/docs/basic copy/placeholder.md",
+				"title": "placeholder",
+				"date": "2023-11-09T00:00:00Z"
+			}
+		]
+	}
+}

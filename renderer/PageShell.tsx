@@ -44,7 +44,7 @@ function Navbar({ children }: PropsWithChildren) {
 					href="/"
 					className="flex transition-colors cursor-pointer p-2 rounded-md hover:bg-white/30 items-center text-4xl font-bold gap-2"
 				>
-					<img src="arkhi.svg" width={32} height={32} />
+					<img src="/arkhi.svg" width={32} height={32} />
 					<h1 className="">ARKHI</h1>
 				</Link>
 			</div>

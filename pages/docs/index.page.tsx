@@ -1,6 +1,7 @@
 import { Head } from "arkhi/client";
 import Layout from "../layout";
 import Article from "#/content/index.md";
+import type { Docs } from "#/libs/files";
 
 export { Page };
 export const PrefetchSetting = { mode: "hover" };
