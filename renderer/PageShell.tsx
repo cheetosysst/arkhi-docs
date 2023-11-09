@@ -62,7 +62,7 @@ function Navbar({ children }: PropsWithChildren) {
 					<li>
 						<Link
 							className="hover:bg-white/50 rounded-md transition-colors p-2"
-							href="/guides"
+							href="/docs/guides"
 						>
 							Guides
 						</Link>
