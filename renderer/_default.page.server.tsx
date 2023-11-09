@@ -55,6 +55,8 @@ async function render(pageContext: PageContextServer) {
 	</body>
 </html>`;
 
+	PageHeads.splice(0, PageHeads.length);
+
 	return {
 		documentHtml,
 		pageContext: {
