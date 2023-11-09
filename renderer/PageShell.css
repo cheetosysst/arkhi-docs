@@ -32,6 +32,11 @@ s
 
 /* Markdown headings */
 
+.htbf::before {
+	content: "#" !important;
+	padding-right: 0.5rem;
+}
+
 .md-hd::before {
 	font-weight: 400;
 	color: #fff5;
@@ -48,7 +53,7 @@ s
 
 .md-hd {
 	font-weight: 500;
-	margin-bottom: 0.5rem;
+	margin-bottom: 1.5rem;
 	margin-top: 2rem;
 }
 
@@ -67,7 +72,7 @@ s
 	border-color: #fff5;
 }
 .md-h3 {
-	font-size: 1.875rem;
+	font-size: 1.875rem !important;
 }
 .md-h4 {
 	margin-top: 0.25rem;
@@ -75,7 +80,7 @@ s
 }
 .md-h5 {
 	margin-top: 0.1rem;
-	font-size: 1.25rem;
+	font-size: 1.25rem !important;
 }
 
 /* Markdown p */
@@ -145,6 +150,7 @@ code.language-js:not(.hljs) {
 
 .md-pre {
 	padding: 1.5rem;
+	margin-bottom: 2rem;
 	border-radius: 1rem;
 	filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
 	background-color: #fff1;
@@ -181,6 +187,7 @@ code.language-js:not(.hljs) {
 	padding-top: 0.2rem;
 	/* padding-bottom: 0.25rem; */
 	border-left: 0.25rem solid #fff4;
+	margin-bottom: 1rem;
 }
 
 .md-bq > .md-p {

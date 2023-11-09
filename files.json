@@ -4,29 +4,90 @@
 		"weight": 1,
 		"data": [
 			{
-				"path": "#/content/docs/basic/getting-started.md",
-				"title": "getting started",
+				"path": "../../../content/docs/basic/islands.md",
+				"title": "islands",
 				"date": "2023-11-09T00:00:00Z"
 			},
 			{
-				"path": "#/content/docs/basic/placeholder.md",
-				"title": "placeholder",
+				"path": "../../../content/docs/basic/layout.md",
+				"title": "layout",
+				"date": "2023-11-09T00:00:00Z"
+			},
+			{
+				"path": "../../../content/docs/basic/prefetch.md",
+				"title": "prefetch",
+				"date": "2023-11-09T00:00:00Z"
+			},
+			{
+				"path": "../../../content/docs/basic/structure.md",
+				"title": "structure",
 				"date": "2023-11-09T00:00:00Z"
 			}
 		]
 	},
-	"basic copy": {
-		"name": "basic copy",
-		"weight": 2,
+	"start": {
+		"name": "start",
+		"weight": 0,
 		"data": [
 			{
-				"path": "#/content/docs/basic copy/getting-started.md",
-				"title": "getting started",
+				"path": "../../../content/docs/start/getting_started.md",
+				"title": "getting-started",
 				"date": "2023-11-09T00:00:00Z"
 			},
 			{
-				"path": "#/content/docs/basic copy/placeholder.md",
-				"title": "placeholder",
+				"path": "../../../content/docs/start/installation.md",
+				"title": "installation",
+				"date": "2023-11-09T00:00:00Z"
+			},
+			{
+				"path": "../../../content/docs/start/editor_setup.md",
+				"title": "editor setup",
+				"date": "2023-11-09T00:00:00Z"
+			},
+			{
+				"path": "../../../content/docs/start/build-your-own-framework.md",
+				"title": "build-your-own-framework",
+				"date": "2023-11-09T00:00:00Z"
+			}
+		]
+	},
+	"guides": {
+		"name": "guides",
+		"weight": 3,
+		"data": [
+			{
+				"path": "../../../content/docs/start/getting_started.md",
+				"title": "endpoint",
+				"date": "2023-11-09T00:00:00Z"
+			},
+			{
+				"path": "../../../content/docs/start/installation.md",
+				"title": "fetching",
+				"date": "2023-11-09T00:00:00Z"
+			},
+			{
+				"path": "../../../content/docs/start/editor_setup.md",
+				"title": "markdown",
+				"date": "2023-11-09T00:00:00Z"
+			},
+			{
+				"path": "../../../content/docs/start/build-your-own-framework.md",
+				"title": "middleware",
+				"date": "2023-11-09T00:00:00Z"
+			},
+			{
+				"path": "../../../content/docs/start/build-your-own-framework.md",
+				"title": "routing",
+				"date": "2023-11-09T00:00:00Z"
+			},
+			{
+				"path": "../../../content/docs/start/build-your-own-framework.md",
+				"title": "ssr",
+				"date": "2023-11-09T00:00:00Z"
+			},
+			{
+				"path": "../../../content/docs/start/build-your-own-framework.md",
+				"title": "troubleshoot",
 				"date": "2023-11-09T00:00:00Z"
 			}
 		]

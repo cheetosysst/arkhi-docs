@@ -20,7 +20,7 @@ Sunt aute anim ea consequat do cupidatat deserunt enim sint irure qui consequat 
 
 ## Image
 
-![alt](/Maraho.png)
+![alt](/arkhi.svg)
 
 ## Lists
 
