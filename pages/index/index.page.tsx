@@ -5,7 +5,6 @@ import "./index.css";
 import {
 	Github,
 	Palmtree,
-	type LucideIcon,
 	Key,
 	Gauge,
 	Wrench,
@@ -47,7 +46,7 @@ function Hero() {
 				</span>
 				<div className="flex gap-2 justify-center lg:justify-start mt-10 flex-wrap">
 					<Link
-						href="/"
+						href="/docs/start/getting-started"
 						className="py-2 px-4 font-semibold bg-gradient-to-r from-purple-700 to-purple-500 hover:from-red-500 hover:to-violet-500 transition-all duration-500 drop-shadow-md rounded-3xl capitalize"
 					>
 						getting started

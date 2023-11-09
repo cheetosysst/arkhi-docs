@@ -9,7 +9,7 @@ function Page() {
 	return (
 		<Layout>
 			<Head>
-				<title>Index Page - Arkhi</title>
+				<title>Editor setup - Arkhi</title>
 				<link rel="icon" type="image/x-icon" href="favicon.ico" />
 			</Head>
 			<Article />

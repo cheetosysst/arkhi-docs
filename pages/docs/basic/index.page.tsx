@@ -10,7 +10,7 @@ function Page() {
 	return (
 		<Layout>
 			<Head>
-				<title>Index Page - Arkhi</title>
+				<title>Basic - Arkhi</title>
 				<link rel="icon" type="image/x-icon" href="favicon.ico" />
 			</Head>
 			<h1 className="text-4xl pl-2 mb-5">Basic</h1>
