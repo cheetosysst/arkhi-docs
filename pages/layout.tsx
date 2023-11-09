@@ -1,16 +1,11 @@
 import { Link } from "arkhi/client";
 import { PropsWithChildren } from "react";
 import { getDocs } from "#/libs/files";
-import { Book, Github, Hash } from "lucide-react";
+import { Book, Github } from "lucide-react";
 
 export default function Layout({ children }: PropsWithChildren) {
 	const docs = getDocs();
-	console.log({
-		docs,
-		sort: Object.keys(docs)
-			.map((key) => docs[key])
-			.sort((a, b) => a.weight - b.weight),
-	});
+
 	return (
 		<div className="flex justify-center flex-row w-full gap-2">
 			<nav className="w-56 flex-shrink-0 bg-white/5 drop-shadow-md transition-transform rounded-lg h-fit flex-grow-0 p-6 mr-10 gap-4 flex flex-col">
