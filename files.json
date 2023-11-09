@@ -91,5 +91,31 @@
 				"date": "2023-11-09T00:00:00Z"
 			}
 		]
+	},
+	"advanced": {
+		"name": "advanced",
+		"weight": 4,
+		"data": [
+			{
+				"path": "../../../content/docs/advanced/backend.md",
+				"title": "backend",
+				"date": "2023-11-09T00:00:00Z"
+			},
+			{
+				"path": "../../../content/docs/advanced/deploy.md",
+				"title": "deploy",
+				"date": "2023-11-09T00:00:00Z"
+			},
+			{
+				"path": "../../../content/docs/advanced/manage-islands.md",
+				"title": "manage islands",
+				"date": "2023-11-09T00:00:00Z"
+			},
+			{
+				"path": "../../../content/docs/advanced/migrate.md",
+				"title": "migrate",
+				"date": "2023-11-09T00:00:00Z"
+			}
+		]
 	}
 }
