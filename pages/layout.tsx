@@ -1,14 +1,26 @@
 import { Link } from "arkhi/client";
 import { PropsWithChildren } from "react";
 import { getDocs } from "#/libs/files";
-import { Book, Github } from "lucide-react";
+import { Book, Github, Menu } from "lucide-react";
 
 export default function Layout({ children }: PropsWithChildren) {
 	const docs = getDocs();
 
 	return (
-		<div className="flex justify-center flex-row w-full gap-2">
-			<nav className="w-56 flex-shrink-0 bg-white/5 drop-shadow-md transition-transform rounded-lg h-fit flex-grow-0 p-6 mr-10 gap-4 lg:flex flex-col hidden">
+		<div className="flex justify-center lg:flex-row lg:px-10 px-5 flex-col w-full gap-2 relative">
+			<input
+				type="checkbox"
+				className="hidden peer/mainnav"
+				id="mainnav"
+			/>
+			<label
+				htmlFor="mainnav"
+				className="bg-neutral-700/20 flex gap-2 capitalize peer-checked/mainnav:bg-neutral-700 lg:hidden drop-shadow-sm text-white p-4 rounded cursor-pointer"
+			>
+				<Menu />
+				open menu
+			</label>
+			<nav className="bg-neutral-800 drop-shadow-md transition-transform rounded-lg h-fit flex-grow p-6 mr-10 gap-4 lg:flex flex-col z-10 lg:z-0 absolute lg:static w-fit float-left peer-checked/mainnav:flex lg:top-0 top-16 hidden">
 				<span className="capitalize font-medium text-white/80 text-xl">
 					arkhi docs
 				</span>
@@ -43,9 +55,7 @@ export default function Layout({ children }: PropsWithChildren) {
 					<Github /> Edit on Github
 				</a>
 			</nav>
-			<div className="w-full px-4 lg:max-w-2xl xl:max-w-4xl">
-				{children}
-			</div>
+			<div className="lg:w-3/4 w-full pb-20">{children}</div>
 		</div>
 	);
 }

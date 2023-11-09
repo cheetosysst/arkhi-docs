@@ -11,7 +11,7 @@ function Page() {
 				<title>Index Page - Arkhi</title>
 				<link rel="icon" type="image/x-icon" href="favicon.ico" />
 			</Head>
-			<div className="text-justify w-full">Error</div>
+			<div className="text-justify">Error</div>
 		</Layout>
 	);
 }

@@ -38,7 +38,7 @@ function Layout({ children }: PropsWithChildren) {
 
 function Navbar({ children }: PropsWithChildren) {
 	return (
-		<div className="max-w-screen-xl mx-auto sticky top-0 bg-gradient-to-b from-[#212121] lg:px-20 p-4 to-[#21212100]">
+		<div className="max-w-screen-xl mx-auto sticky top-0 bg-gradient-to-b from-[#212121] lg:px-20 z-20 p-4 to-[#21212100]">
 			<div className="bg-nav w-full flex justify-between items-center z-20">
 				<div>
 					<Link
