@@ -8,7 +8,7 @@ export default function Layout({ children }: PropsWithChildren) {
 
 	return (
 		<div className="flex justify-center flex-row w-full gap-2">
-			<nav className="w-56 flex-shrink-0 bg-white/5 drop-shadow-md transition-transform rounded-lg h-fit flex-grow-0 p-6 mr-10 gap-4 flex flex-col">
+			<nav className="w-56 flex-shrink-0 bg-white/5 drop-shadow-md transition-transform rounded-lg h-fit flex-grow-0 p-6 mr-10 gap-4 lg:flex flex-col hidden">
 				<span className="capitalize font-medium text-white/80 text-xl">
 					arkhi docs
 				</span>
@@ -43,7 +43,9 @@ export default function Layout({ children }: PropsWithChildren) {
 					<Github /> Edit on Github
 				</a>
 			</nav>
-			<div className="w-full">{children}</div>
+			<div className="w-full px-4 lg:max-w-2xl xl:max-w-4xl">
+				{children}
+			</div>
 		</div>
 	);
 }
