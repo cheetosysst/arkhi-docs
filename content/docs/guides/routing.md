@@ -99,6 +99,7 @@ const Link_ = ({
 	);
 };
 ```
+```
 
 
 ## 範例
@@ -158,3 +159,7 @@ function Page() {
 }
 ```
 
+	public forward(): void {
+		window.history.forward();
+	}
+```
