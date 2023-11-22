@@ -100,22 +100,61 @@ const Link_ = ({
 };
 ```
 
-	private onPop(event: PopStateEvent): void {
-		this.updatePageContext({
-			href: this.getPath(window.location.href),
-			mode: "back",
-		});
-	}
 
-	public go(path: string): Promise<boolean> {
-		path = this.getPath(path);
-		return this.updatePageContext({ href: path, mode: "go" });
-	}
+## 範例
+`ClientRouter` 對外主要提供 `go`, `back`, `forward`, `<Link>` 等功能，而 `ClientRouter` 的實體只應該在 `your_project\renderer\_default.page.client.tsx` 中被建立。
 
-	public back(): void {
-		window.history.back();
-	}
+### `go()`
+**跳轉到輸入的路徑**
+```tsx
+public go(path: string): Promise<boolean> {
+	path = this.getPath(path);
+	return this.updatePageContext({ href: path, mode: "go" });
+}
 
-	public forward(): void {
-		window.history.forward();
-	}
+//example
+if(....){
+	window.clientRouter.go('/path_you_want_to_go');
+}
+```
+
+
+### `back()`
+**跳轉回到上一頁面**
+```tsx
+public back(): void {
+	window.history.back();
+}
+//example
+if(....){
+	window.clientRouter.back();
+}
+```
+
+### `forward()`
+**跳轉前往下一個頁面**
+```tsx
+public forward(): void {
+	window.history.();
+}
+//example
+if(....){
+	window.clientRouter.forward();
+}
+```
+
+## `<Link>`
+雖然 Arkhi 搜尋島嶼並重建時，會主動將原有的 Anchor `<a>` 標籤 用 `<Link>` 進行替換，但 `<Link>` 也可以直接匯入後使用。
+```tsx
+import { Link } from "#/arkhi/client";
+export { Page };
+
+function Page() {
+	return (
+		<>
+			<Link href="/link_you_want_to_go">Back To Home</Link>
+		</>
+	);
+}
+```
+
