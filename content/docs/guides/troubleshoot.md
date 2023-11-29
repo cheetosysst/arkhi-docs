@@ -46,7 +46,7 @@ function FooComponent({ ...props }:{}) {
 
 #### 使用 Vite
 
-因為 Vite 本身已經滿足部份這些需求，例如 env 可以透過 `import.meta.env` 取得，或是能夠直接載入 json、css 檔案，可以避免直接操作伺服器端資源的情形。
+因為 Vite 本身已經滿足部份這些需求，例如 env 可以[透過 Vite 取得](https://vitejs.dev/guide/env-and-mode.html#env-variables-and-modes)，或是能夠直接載入 json、css 檔案，可以避免直接操作伺服器端資源的情形。
 
 #### Custom Loader
 

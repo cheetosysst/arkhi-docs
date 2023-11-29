@@ -99,8 +99,6 @@ const Link_ = ({
 	);
 };
 ```
-```
-
 
 ## 範例
 `ClientRouter` 對外主要提供 `go`, `back`, `forward`, `<Link>` 等功能，而 `ClientRouter` 的實體只應該在 `your_project\renderer\_default.page.client.tsx` 中被建立。
@@ -157,9 +155,4 @@ function Page() {
 		</>
 	);
 }
-```
-
-	public forward(): void {
-		window.history.forward();
-	}
 ```
