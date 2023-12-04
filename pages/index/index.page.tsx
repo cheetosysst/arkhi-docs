@@ -52,7 +52,7 @@ function Hero() {
 						getting started
 					</Link>
 					<Link
-						href="/docs"
+						href="/docs/guides"
 						className="py-2 px-4 font-medium drop-shadow-md bg-white/20 hover:bg-white/30 rounded-3xl capitalize"
 					>
 						Documentation
@@ -65,7 +65,7 @@ function Hero() {
 						Github
 					</Link>
 					<Link
-						href="/about"
+						href="/docs/guides"
 						className="py-2 px-4 font-medium drop-shadow-md bg-white/20 hover:bg-white/30 rounded-3xl capitalize"
 					>
 						About

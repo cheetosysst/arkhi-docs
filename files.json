@@ -9,18 +9,8 @@
 				"date": "2023-11-09T00:00:00Z"
 			},
 			{
-				"path": "../../../content/docs/basic/layout.md",
-				"title": "layout",
-				"date": "2023-11-09T00:00:00Z"
-			},
-			{
 				"path": "../../../content/docs/basic/prefetch.md",
 				"title": "prefetch",
-				"date": "2023-11-09T00:00:00Z"
-			},
-			{
-				"path": "../../../content/docs/basic/structure.md",
-				"title": "structure",
 				"date": "2023-11-09T00:00:00Z"
 			}
 		]
@@ -38,16 +28,6 @@
 				"path": "../../../content/docs/start/installation.md",
 				"title": "installation",
 				"date": "2023-11-09T00:00:00Z"
-			},
-			{
-				"path": "../../../content/docs/start/editor_setup.md",
-				"title": "editor setup",
-				"date": "2023-11-09T00:00:00Z"
-			},
-			{
-				"path": "../../../content/docs/start/build-your-own-framework.md",
-				"title": "build your own framework",
-				"date": "2023-11-09T00:00:00Z"
 			}
 		]
 	},
@@ -56,37 +36,27 @@
 		"weight": 3,
 		"data": [
 			{
-				"path": "../../../content/docs/start/getting_started.md",
-				"title": "endpoint",
-				"date": "2023-11-09T00:00:00Z"
-			},
-			{
-				"path": "../../../content/docs/start/installation.md",
-				"title": "fetching",
-				"date": "2023-11-09T00:00:00Z"
-			},
-			{
-				"path": "../../../content/docs/start/editor_setup.md",
+				"path": "../../../content/docs/guildws/markdown.md",
 				"title": "markdown",
 				"date": "2023-11-09T00:00:00Z"
 			},
 			{
-				"path": "../../../content/docs/start/build-your-own-framework.md",
+				"path": "../../../content/docs/guildws/middleware.md",
 				"title": "middleware",
 				"date": "2023-11-09T00:00:00Z"
 			},
 			{
-				"path": "../../../content/docs/start/build-your-own-framework.md",
+				"path": "../../../content/docs/guildws/routing.md",
 				"title": "routing",
 				"date": "2023-11-09T00:00:00Z"
 			},
 			{
-				"path": "../../../content/docs/start/build-your-own-framework.md",
+				"path": "../../../content/docs/guildws/ssr.md",
 				"title": "ssr",
 				"date": "2023-11-09T00:00:00Z"
 			},
 			{
-				"path": "../../../content/docs/start/build-your-own-framework.md",
+				"path": "../../../content/docs/guildws/troubleshoot.md",
 				"title": "troubleshoot",
 				"date": "2023-11-09T00:00:00Z"
 			}
@@ -97,23 +67,8 @@
 		"weight": 4,
 		"data": [
 			{
-				"path": "../../../content/docs/advanced/backend.md",
-				"title": "backend",
-				"date": "2023-11-09T00:00:00Z"
-			},
-			{
-				"path": "../../../content/docs/advanced/deploy.md",
-				"title": "deploy",
-				"date": "2023-11-09T00:00:00Z"
-			},
-			{
 				"path": "../../../content/docs/advanced/manage-islands.md",
 				"title": "manage islands",
-				"date": "2023-11-09T00:00:00Z"
-			},
-			{
-				"path": "../../../content/docs/advanced/migrate.md",
-				"title": "migrate",
 				"date": "2023-11-09T00:00:00Z"
 			}
 		]
