@@ -65,7 +65,7 @@ function Hero() {
 						Github
 					</Link>
 					<Link
-						href="/docs/guides"
+						href="/about"
 						className="py-2 px-4 font-medium drop-shadow-md bg-white/20 hover:bg-white/30 rounded-3xl capitalize"
 					>
 						About
