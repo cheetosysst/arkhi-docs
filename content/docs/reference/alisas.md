@@ -1,19 +1,20 @@
 # package.json
 package.json 連接和配置所有的工具和依賴。以下說明可以幫助你理解和最大化利用**arkhi**的配置
-##　腳本
+
+## 腳本
 透過 `npm` 可以執行腳本
 
-* **dev**:
+##### `dev`:
     * 啟動開發伺服器
-* **prod**
+##### `prod`
     * 首先建構專案，然後使用生產模式啟動伺服器
-* **build**
+##### `build`
     * 用 Vite 工具進行專案建構，將 TypeScript 代碼編譯為可在瀏覽器中運行的 JavaScript
-* **build:arkhi**
+##### `build:arkhi`
     * 在 arkhi 目錄下構建腳本
-* **server**
+##### `server`
     * 使用 ts-node 啟動伺服器，允許 TypeScript 代碼直接運行，無需事先編譯
-* **server:prod**
+##### `server:prod`
     * 以生產模式運行伺服器
 
 ## 依賴

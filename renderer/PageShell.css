@@ -4,8 +4,9 @@
 
 body {
 	background: #212121;
-	color: #fcfcfc;
+	color: gainsboro;
 	font-variant-numeric: tabular-nums;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, "Noto Sans CJK TC", "Microsoft JhengHei", "PingFang", "STHeiti", sans-serif, serif;
 }
 
 html:not([data-scroll="0"]) .bg-nav {
@@ -14,33 +15,30 @@ html:not([data-scroll="0"]) .bg-nav {
 }
 
 /* sm */
-@media (min-width: 640px) {
-}
-s
+@media (min-width: 640px) {}
+
 /* md */
-@media (min-width: 768px) {
-}
+@media (min-width: 768px) {}
+
 /* lg */
-@media (min-width: 1024px) {
-}
+@media (min-width: 1024px) {}
+
 /* xl */
-@media (min-width: 1280px) {
-}
+@media (min-width: 1280px) {}
+
 /* 2xl */
-@media (min-width: 1536px) {
-}
+@media (min-width: 1536px) {}
 
 /* Markdown headings */
 
 .htbf::before {
-	content: "#" !important;
 	padding-right: 0.5rem;
 }
 
-.md-hd::before {
+.md-h1::before {
+	content: "#	";
 	font-weight: 400;
 	color: #fff5;
-	content: "# ";
 	transition-property: color;
 	duration: 150ms;
 }
@@ -52,6 +50,7 @@ s
 }
 
 .md-hd {
+	color: ghostwhite;
 	font-weight: 500;
 	margin-bottom: 1.5rem;
 	margin-top: 2rem;
@@ -62,25 +61,36 @@ s
 }
 
 .md-h1 {
+	color: white;
 	font-size: 3rem;
 	border-bottom-width: 2px;
-	border-color: #fff5;
+	border-bottom: none;
 }
+
 .md-h2 {
 	font-size: 2.25rem;
 	border-bottom-width: 2px;
 	border-color: #fff5;
 }
+
 .md-h3 {
 	font-size: 1.875rem !important;
 }
+
 .md-h4 {
 	margin-top: 0.25rem;
 	font-size: 1.5rem;
 }
+
 .md-h5 {
+	margin-top: 1rem;
+	margin-bottom: 0.1rem;
+	font-size: 1.25rem;
+}
+
+.md-h6 {
 	margin-top: 0.1rem;
-	font-size: 1.25rem !important;
+	font-size: 1.0rem;
 }
 
 /* Markdown p */
@@ -93,32 +103,35 @@ s
 }
 
 /* Markdown list */
+
 .md-ul {
 	margin-top: 0.25rem;
 	margin-bottom: 0.25rem;
+	padding-left: 1rem;
 	font-size: 1.1rem;
 }
 
 .md-ol {
 	margin-top: 0.25rem;
 	margin-bottom: 0.25rem;
+	padding-left: 1rem;
 	font-size: 1.1rem;
 }
 
-.md-ul > li > .md-ul {
+.md-ul>li>.md-ul {
 	padding-left: 1rem;
 }
 
-.md-ol > li > .md-ol {
+.md-ol>li>.md-ol {
 	padding-left: 1rem;
 }
 
-.md-ul > li {
+.md-ul>li {
 	list-style-type: disc;
 	list-style-position: inside;
 }
 
-.md-ol > li {
+.md-ol>li {
 	list-style-type: decimal;
 	list-style-position: inside;
 }
@@ -130,6 +143,11 @@ s
 	transition-property: color;
 	duration: 150ms;
 }
+
+.md-hd a {
+	color: white;
+}
+
 .md-a:hover {
 	color: #fcd34d;
 	transition-property: color;
@@ -138,23 +156,24 @@ s
 
 /* Markdown code */
 
-code.language-js:not(.hljs) {
-	background-color: #fff2;
-	padding: 0.25rem;
-	font-size: 1rem;
-	border-radius: 0.3rem;
-	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-		"Liberation Mono", "Courier New", monospace;
-	letter-spacing: 0.04em;
-}
-
 .md-pre {
 	padding: 1.5rem;
 	margin-bottom: 2rem;
 	border-radius: 1rem;
 	filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
 	background-color: #fff1;
-	overflow: scroll;
+	overflow: auto;
+}
+
+code.language-js:not(.hljs) {
+	background-color: #fff2;
+	padding: 0.25rem;
+	margin: 0.1rem;
+	font-size: 80%;
+	border-radius: 0.3rem;
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+		"Liberation Mono", "Courier New", monospace;
+	letter-spacing: 0.04em;
 }
 
 .hljs-keyword {
@@ -181,6 +200,18 @@ code.language-js:not(.hljs) {
 	color: #c792ea;
 }
 
+.hljs-variable {
+	color: #c792ea;
+}
+
+.hljs-built_in {
+	color: #fcd34d;
+}
+
+.hljs-comment {
+	color: #8de88f;
+}
+
 /* Markdown blockquote */
 
 .md-bq {
@@ -191,7 +222,7 @@ code.language-js:not(.hljs) {
 	margin-bottom: 1rem;
 }
 
-.md-bq > .md-p {
+.md-bq>.md-p {
 	margin-bottom: 0rem;
 	padding-bottom: 0.25rem;
 }

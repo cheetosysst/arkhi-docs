@@ -2,8 +2,8 @@
 
 在本章節，我們將簡單了解如何安裝 Arkhi 框架。
 
-- Arkhi 核心：https://www.npmjs.com/package/arkhi
-- 安裝工具：https://www.npmjs.com/package/create-arkhi
+- [Arkhi 核心](https://www.npmjs.com/package/arkhi)：https://www.npmjs.com/package/arkhi
+- [安裝工具](https://www.npmjs.com/package/create-arkhi)：https://www.npmjs.com/package/create-arkhi
 
 ## 自動安裝
 
@@ -11,7 +11,9 @@
 
 ```bash
 npm create arkhi@latest my-project
-# 或是
+```
+或是
+```bash
 pnpm create arkhi@latest my-project
 ```
 
@@ -22,9 +24,11 @@ pnpm create arkhi@latest my-project
 
 ```bash
 cd my-project
-
+```
+後接著
+```bash
 npm install
-# 或是
+# 或
 pnpm install
 ```
 
@@ -34,5 +38,5 @@ pnpm install
 
 ## 手動安裝
 
-Arkhi 底層使用 [Vike](https://vike.dev) 和 [Vite](https://vitejs.dev/) 負責處理框架事務，Arkhi 核心負責在此基礎上提供島嶼架構和相關輔助設施。理論上你能夠使用 Vike 建立專案，再自行將 Arkhi 的 API 串接上。
+Arkhi 底層使用 [Vike](https://vike.dev) 和 [Vite](https://vitejs.dev/) 處理框架事務，Arkhi 核心負責在此基礎上提供島嶼架構和相關輔助設施。理論上你能夠使用 Vike 建立專案，再自行將 Arkhi 的 API 串接上專案。
 
